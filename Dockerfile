@@ -5,7 +5,7 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y nginx && apt-get clean
 
 # Set the working directory
-WORKDIR /var/www/html
+WORKDIR /var/www/todo
 
 # Copy the index.html file to the nginx root directory
 COPY index.html .
